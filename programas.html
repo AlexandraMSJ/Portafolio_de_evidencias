@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas</title>
+    <style>
+        body{
+            background-image: url('fondo.jpg'); /* Ruta de la imagen de fondo */
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Organizar elementos en columna */
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Garantizar altura mínima de la vista */
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 30px;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+        }
+        tr{
+            background-color: #ffffff;
+        }
+        th {
+            background-color: #ef5252;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+        nav {
+            background-color: #d50b0b;
+            width: 100%; /* Ocupar todo el ancho disponible */
+            text-align: center; /* Centrar el texto dentro de la barra de navegación */
+            position: fixed; /* Fijar la barra de navegación en la parte superior */
+            top: 0; /* Colocar la barra en la parte superior */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #000000;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            font-size: 36px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Datos</a>
+        <a href="investigaciones.html">Actividades</a>
+        <a href="programas.html">Programas</a>
+        <a href="conclusion.html">Conclusión</a>
+    </nav>
+    <br><br>
+    <h1>Programas</h1>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Número de Programa</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Reporte</th>
+                <th>Código</th>
+                <th>Video</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>
+                Programa 1
+            </td>
+            <td>
+                Simulación procesamiento por lotes
+            </td>
+            <td>
+                Para esta actividad se realizo un programa para la simulación de procesamiento por lotes, 
+                en donde desde el teclaro se pone el número de procesosa realizar, en donde la capacidad maxima de un lote sera de 4.
+                Estos procesos realizan un tipo de operación en un tiempo maximo estimado. Luego de que el programa recopila toda esta información, organiza los 
+                procesos en lotes y los ejecuta secuencialmente, mostrando información relevante sobre los estados 
+                de ejecución de cada proceso. 
+            </td>
+            <td>
+                <a href="Archivos/MagañaSalcedoD04Act03.pdf">Archivo PDF</a>
+            </td>
+            <td>
+                <a href="Programas/Programa 1.py">Archivo py</a>
+            </td>
+            <td>
+                <a href="Videos/Programa1.mp4">Video</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Programa 2
+            </td>
+            <td>
+                Proceso por lotes con Multiprogramación 
+            </td>
+            <td>
+                Para esta actividad se realizo un programa de simulación de procesamiento por lotes 
+                con Multiprogramación. Para este programa se implemento un sistema de planificación
+                de procesos que asigna eficientemente los recursos del sistema, como la CPU y la memoria, a los procesos en cola.
+            </td>
+            <td>
+                <a href="Archivos/MagañaSalcedoD04Act05.pdf">Archivo PDF</a>
+            </td>
+            <td>
+                <a href="Programas/Programa 2.py">Archivo py</a>
+            </td>
+            <td>
+                <a href="Videos/Programa2.mp4">Video</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Programa 3
+            </td>
+            <td>
+                First Come First Server
+            </td>
+            <td>
+                Para esta actividad se realizo un programa que simule el algoritmo de planificacion de procesos, First-Come, First-Served. Este programa simula 5 estados principales 
+                de un proceso. Cada estado representa una etapa especifica en el ciclo de la vida del proceso, desde su creación, hasta su finalización. Este permite la interacción 
+                del usuario a través de teclas específicas que simulan interrupciones para entrada/salida, errores, ejecución, pausa y continuación.
+            </td>
+            <td>
+                <a href="Archivos/MagañaSalcedoD04Act07.pdf">Archivo PDF</a>
+            </td>
+            <td>
+                <a href="Programas/Programa 3.py">Archivo py</a>
+            </td>
+            <td>
+                <a href="Videos/Programa3.mp4">Video</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Programa 4
+            </td>
+            <td>
+                First Come First Server continuación
+            </td>
+            <td>
+                En esta actividad se realizó una continuación del programa anterir FCFS, en donde se incorporaron 
+                algunas funciones, como la generacion de interrupciones por entrada-salida. la finalización de procesos por error y la visualizacion de la tabla de procesos. 
+                El enfoque del programa es simular la planificación de procesos utilizando FCFS, un enfoque donde los procesos 
+                son atendidos en el orden en que llegan. 
+            </td>
+            <td>
+                <a href="Archivos/MagañaSalcedoD04Act09.pdf">Archivo PDF</a>
+            </td>
+            <td>
+                <a href="">Archivo py</a>
+            </td>
+            <td>
+                <a href="Videos/Programa4.webm">Video</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Programa 5
+            </td>
+            <td>
+                Productor-Consumidor
+            </td>
+            <td>
+                Para esta actividad se realizo un programa donde se implemento una solución al problema 
+                clásico del productor-consumidor, esto con el fin de comprender y aplicar conceptos de concurrencia 
+                y sincronización de hilos.
+            </td>
+            <td>
+                <a href="Archivos/MagañaSalcedoD04Act10.pdf">Archivo PDF</a>
+            </td>
+            <td>
+                <a href="Programas/Programa 5.py">Archivo py</a>
+            </td>
+            <td>
+                <a href="Videos/Programa5.mp4">Video</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Programa 6
+            </td>
+            <td>
+                Round-Robin
+            </td>
+            <td>
+                Para esta actividad de realizo un programa para simular un planificador de procesos utilizando el algoritmo de planificación Round-Robin. 
+                
+            </td>
+            <td>
+                <a href="Archivos/MagañaSalcedoD04Act12.pdf">Archivo PDF</a>
+            </td>
+            <td>
+                <a href="Programas/Programa 6.py">Archivo py</a>
+            </td>
+            <td>
+                <a href="Videos/Programa6.mp4">Video</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Programa 7
+            </td>
+            <td>
+                Paginación Simple
+            </td>
+            <td>
+                Para esta actividad se realizo un programa con el algoritmo de planificacion de Round-Robin, donde se aplica la paginación simple 
+                dividiendo la memoria en "Marcos", donde el sistema operativo ocupará 5 marcos. 
+            </td>
+            <td>
+                <a href="Archivos/MagañaSalcedoD04Act14.pdf">Archivo PDF</a>
+            </td>
+            <td>
+                <a href="Programas/Programa 7.py">Archivo py</a>
+            </td>
+            <td>
+                <a href="Videos/Programa7.mp4">Video</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
